@@ -11,7 +11,7 @@ import java.util.Random;
 
 public class HangmanLogic {
     private String[] parole = { "ciao", "computer" };
-    private String parolaDaIndovinare = parole[(int) (Math.random() * parole.length)];
+    private String parolaDaIndovinare;
     private char[] lettereIndovinate;
     private StringBuilder lettereErrate;
     private int tentativiRimasti;
@@ -42,6 +42,7 @@ public class HangmanLogic {
             System.out.println("Inserisci una lettera valida");
             return false;
         }
+
         if (partitaFinita)
             return false;
 

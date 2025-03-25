@@ -7,6 +7,7 @@ public class HangmanApp {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         HangmanLogic hangman = new HangmanLogic();
+        System.out.println("1.GUI \n 2.CLI");
 
         while (!hangman.getPartitaFinita()) {
             System.out.println("Indovina la parola: " + new String(hangman.getLettereIndovinate()));
